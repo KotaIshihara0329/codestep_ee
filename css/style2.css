@@ -1,0 +1,172 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+::selection {
+  background-color: pink;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+
+picture {
+    vertical-align: bottom;
+}
+
+
+
+a {
+    color: #333;
+    text-decoration: none;
+  }
+
+li {
+    list-style: none;
+  }
+
+
+
+/* Typography */
+h1 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    text-align: left;
+    padding: 8rem 0;
+    margin: 0;
+
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.flex ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.flex li {
+    width: 50%;
+    padding-bottom: 1.2rem;
+
+}
+
+.image {
+    padding-bottom: 1.2rem;
+}
+
+
+.flex li:nth-child(odd) {
+    padding-right: 0.6rem;
+}
+
+.flex li:nth-child(even) {
+    padding-left: 0.6rem;
+}
+
+
+
+@media screen and (min-width:900px) {
+    .container {
+        width: 116rem;
+        padding: auto 2rem;
+    }
+
+    .flex {
+        display: flex;
+        width: 100%;
+        margin: auto;
+
+    }
+    .image {
+        width: 40%;
+    }
+
+    .flex ul {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .flex ul li {
+        width: calc(100% / 3);
+        padding-left: 1.2rem;
+        padding-bottom: 0;
+    }
+
+
+    .image {
+        padding-bottom: 0;
+
+    }
+    .flex li {
+        width: 50%;
+        padding-bottom: 1.2rem;
+    
+    }
+    
+    .image {
+        padding-bottom: 0;
+    }
+    
+    
+    .flex li:nth-child(odd) {
+        padding-left: 1.2rem;
+        padding-right: 0;
+    }
+    
+    .flex li:nth-child(even) {
+        padding-left: 1.2rem;
+
+    }
+    
+    
+
+
+
+}
+
+
+
+
+
+
